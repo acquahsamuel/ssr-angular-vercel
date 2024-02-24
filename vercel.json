@@ -1,0 +1,15 @@
+{
+    "version": 2,
+    "public": true,
+    "name": "ssr-angular",
+    "rewrites": [{
+        "source": "/(.*)",
+        "destination": "/api"
+      }
+    ],
+    "functions": {
+      "api/index.js": {
+        "includeFiles": "dist/ssr-angular/**"
+      }
+    }
+  }
